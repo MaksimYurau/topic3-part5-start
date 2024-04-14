@@ -86,7 +86,14 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout-compose:1.0.1'
 
     // Room
-    implementation "androidx.room:room-runtime:2.2.6"
+    // implementation "androidx.room:room-runtime:2.2.6"
+
+    // Room
+    // Updated version for avoiding exception (on Macbook M1)
+    implementation "androidx.room:room-runtime:2.4.0-alpha03"
+    annotationProcessor "androidx.room:room-compiler:2.4.0-alpha03"
+    kapt "androidx.room:room-compiler:2.4.0-alpha03"
+
     implementation 'androidx.test:monitor:1.6.1'
     implementation 'androidx.test.ext:junit-ktx:1.1.5'
     testImplementation 'junit:junit:4.12'
