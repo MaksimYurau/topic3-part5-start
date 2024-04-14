@@ -40,8 +40,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
-import com.maksimyurau.android.lab11_reddit.R
-import com.maksimyurau.android.lab11_reddit.theme.RedditThemeSettings
+import com.topic3.android.reddit.R
+import com.topic3.android.reddit.theme.RedditThemeSettings
 
 /**
  * Представляет корневую композицию для панели приложений, используемой на экранах.

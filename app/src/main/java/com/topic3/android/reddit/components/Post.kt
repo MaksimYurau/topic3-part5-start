@@ -23,9 +23,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.maksimyurau.android.lab11_reddit.R
-import com.maksimyurau.android.lab11_reddit.model.PostModel
-import com.maksimyurau.android.lab11_reddit.model.PostModel.Companion.DEFAULT_POST
+import com.topic3.android.reddit.R
+import com.topic3.android.reddit.domain.model.PostModel
+import com.topic3.android.reddit.domain.model.PostModel.Companion.DEFAULT_POST
 
 @Composable
 fun TextPost(

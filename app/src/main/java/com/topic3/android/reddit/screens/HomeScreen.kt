@@ -18,12 +18,12 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.maksimyurau.android.lab11_reddit.components.ImagePost
-import com.maksimyurau.android.lab11_reddit.components.JoinedToast
-import com.maksimyurau.android.lab11_reddit.components.TextPost
-import com.maksimyurau.android.lab11_reddit.model.PostModel
-import com.maksimyurau.android.lab11_reddit.model.PostType
-import com.maksimyurau.android.lab11_reddit.viewmodel.MainViewModel
+import com.topic3.android.reddit.components.ImagePost
+import com.topic3.android.reddit.components.JoinedToast
+import com.topic3.android.reddit.components.TextPost
+import com.topic3.android.reddit.domain.model.PostModel
+import com.topic3.android.reddit.domain.model.PostType
+import com.topic3.android.reddit.viewmodel.MainViewModel
 import java.util.Timer
 import kotlin.concurrent.schedule
 

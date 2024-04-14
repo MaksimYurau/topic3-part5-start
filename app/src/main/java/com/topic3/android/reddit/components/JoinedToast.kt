@@ -24,7 +24,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.maksimyurau.android.lab11_reddit.R
+import com.topic3.android.reddit.R
 
 @Composable
 fun JoinedToast(visible: Boolean) {

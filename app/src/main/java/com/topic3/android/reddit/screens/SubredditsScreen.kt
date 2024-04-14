@@ -28,10 +28,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.zIndex
 import androidx.constraintlayout.compose.ConstraintLayout
-import com.maksimyurau.android.lab11_reddit.R
-import com.maksimyurau.android.lab11_reddit.components.BackgroundText
-import com.maksimyurau.android.lab11_reddit.models.SubredditModel
-import com.maksimyurau.android.lab11_reddit.theme.RwPrimary
+import com.topic3.android.reddit.R
+import com.topic3.android.reddit.components.BackgroundText
+import com.topic3.android.reddit.models.SubredditModel
+import com.topic3.android.reddit.theme.RwPrimary
 
 val subreddits = listOf(
     SubredditModel(
