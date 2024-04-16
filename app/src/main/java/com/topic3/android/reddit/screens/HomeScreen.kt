@@ -189,10 +189,5 @@ private fun TrendingTopic(trendingTopic: TrendingTopicModel) {
 @Preview(showBackground = true)
 @Composable
 private fun TrendingTopicPreview() {
-    TrendingTopic(
-        trendingTopic = TrendingTopicModel(
-            "Compose Animations",
-            R.drawable.jetpack_compose_animations
-        )
-    )
+    TrendingTopics(trendingTopics = trendingItems)
 }
