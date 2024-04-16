@@ -88,27 +88,37 @@ fun HomeScreen(viewModel: MainViewModel) {
     val homeScreenItems = mapHomeScreenItems(posts)
     Box(modifier = Modifier.fillMaxSize()) {
         LazyColumn(
-            modifier = Modifier.background(
-                color =
-                MaterialTheme.colors.secondary
-            )
-        ) {
-            items(posts) {
-                if (it.type == PostType.TEXT) {
-                    TextPost(it, onJoinButtonClick = onJoinClickAction)
-                } else {
-                    ImagePost(it, onJoinButtonClick = onJoinClickAction)
-                }
-                Spacer(modifier = Modifier.height(6.dp))
-            }
-        }
-        Box(
             modifier = Modifier
-                .align(Alignment.BottomCenter)
-                .padding(bottom = 16.dp)
-        ) {
-            JoinedToast(visible = isToastVisible)
-        }
+                .background(color = MaterialTheme.colors.secondary),
+            content = {
+                items(
+                    items = homeScreenItems,
+                    itemContent = { item ->
+                        if (item.type == HomeScreenItemType.TRENDING) {
+                            TrendingTopics(
+                                trendingTopics = trendingItems,
+                                modifier = Modifier.padding(
+                                    top = 16.dp, bottom = 6.dp
+                                )
+                            )
+                        } else if (item.post != null) {
+                            val post = item.post
+                            if (post.type == PostType.TEXT) {
+                                TextPost(
+                                    post = post,
+                                    onJoinButtonClick = onJoinClickAction
+                                )
+                            } else {
+                                ImagePost(
+                                    post = post,
+                                    onJoinButtonClick = onJoinClickAction
+                                )
+                            }
+                            Spacer(modifier = Modifier.height(6.dp))
+                        }
+                    }
+                )
+            })
     }
 }
 
